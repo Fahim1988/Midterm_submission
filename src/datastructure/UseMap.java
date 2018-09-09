@@ -1,9 +1,7 @@
 package datastructure;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.swing.text.html.HTMLDocument;
+import java.util.*;
 
 public class UseMap {
 
@@ -29,6 +27,12 @@ public class UseMap {
 		listofCities.put("Cities of Bangladesh",BDcity);
 		listofCities.put("States of USA",UScity);
 		listofCities.put("Cities of Pakistan",PAKcity);
+
+		Iterator it=listofCities.entrySet().iterator();
+
+		while(it.hasNext()){
+			System.out.println(it.next());
+		}
 
 		for(Map.Entry<String,List<String>> cityInfo:listofCities.entrySet()){
 			System.out.println("Cities of different countries :"+cityInfo.getKey()+"--->"+cityInfo.getValue());
