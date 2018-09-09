@@ -1,5 +1,6 @@
 package datastructure;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -15,6 +16,12 @@ public class UseQueue {
 		students.remove();
 		students.peek();
 		students.poll();
+
+		Iterator it=students.iterator();
+		while(it.hasNext()){
+			System.out.println(it.next());
+		}
+
 		for(String ami: students){
 			System.out.println("Remove names  :"+students.remove()+" Peek Names :"+students.peek()+" Poll Names :"+students.poll());
 
