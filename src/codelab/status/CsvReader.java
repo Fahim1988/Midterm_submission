@@ -48,7 +48,7 @@ public class CsvReader {
             }else if (student.getNumberOfExercisesSolved()>400 && student.getNumberOfExercisesSolved()<500) {
                 System.out.print("You could do better-->");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
-            }else if (student.getNumberOfExercisesSolved()>300&& student.getNumberOfExercisesSolved()<400) {
+            }else if (student.getNumberOfExercisesSolved()>=300&& student.getNumberOfExercisesSolved()<400) {
                 System.out.print("You should have done more--> ");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }else if (student.getNumberOfExercisesSolved()>200&&student.getNumberOfExercisesSolved()<300) {
