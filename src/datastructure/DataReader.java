@@ -8,7 +8,7 @@ public class DataReader {
 	public static void main(String[] args) {
 		FileReader fr=null;
 		BufferedReader br=null;
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		String textFile = "E:\\MidtermJuly2018\\src\\data\\self-driving-car.txt";
 		try{
 			fr=new FileReader(textFile);
 			System.out.println("your File has been found.");
