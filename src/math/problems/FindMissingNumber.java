@@ -12,6 +12,13 @@ public class FindMissingNumber {
          * Write java code to find the missing number from the array. Write static helper method to find it.
          */
          int [] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
+         int n=10;
+         int Total_NO=(n+1)*((n+1)/2);
+         int n_sum=0;
+         for(int i:array){
+             n_sum+=i;
+         }
+        System.out.println("The Missing number is : "+(Total_NO - n_sum));
 
     }
 }

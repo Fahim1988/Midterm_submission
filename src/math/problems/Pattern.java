@@ -8,7 +8,15 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
+		int counter=1;
+		int no=100;
+		while(no>0){
+			for(int i=0;i<10;i++){
+				no-=counter;
+				System.out.println( "This is the pattern of this given problems "+no);
+			}
+			counter++;
+		}
 
 
 	}
