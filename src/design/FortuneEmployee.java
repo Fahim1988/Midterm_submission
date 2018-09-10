@@ -81,7 +81,7 @@ public class FortuneEmployee {
 
 
 
-		/*ConnectDB.createTableFromStringToMySql("employee_record", "employee_id", "employee_info");
+	//	ConnectDB.createTableFromStringToMySql("employee_record", "employee_id", "employee_info");
 
 		for (Integer obj : employeeInfo.keySet()) {
 			for (Object obj1 : employeeInfo.get(obj)) {
@@ -89,21 +89,21 @@ public class FortuneEmployee {
 				List<String> list1 = new ArrayList<>();
 				list1.add(obj.toString());
 				list1.add(obj1.toString());
-				InsertDataFromArrayListToMySql(list1, "employee_record", "employee_id", "employee_info");
+				//InsertDataFromArrayListToMySql(list1, "employee_record", "employee_id", "employee_info");
 			}
 
 		}
 		System.out.println("Reading from database");
-		List<String> empRec = connectDB.readDataBase("employee_record", "employee_id", "employee_info");
-		for (String emp : empRec) {
-			System.out.println(emp);
-		}*/
+	//	List<String> empRec = connectDB.readDataBase("employee_record", "employee_id", "employee_info");
+		//for (String emp : empRec) {
+		//	System.out.println(emp);
+		}
 
 
 	}
 		
 
 
-	}
+
 
 
