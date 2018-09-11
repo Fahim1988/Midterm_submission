@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class Anagram {
 
-    static void stAnagram(String s1,String s2){
+    static boolean isAnagram(String s1,String s2){
         String cs1=s1.replaceAll("\\s","");
         String cs2=s2.replaceAll("\\s","");
         boolean status=true;
@@ -28,11 +28,12 @@ public class Anagram {
         {
             System.out.println(s1+" and "+s2+" are not anagrams");
         }
+        return status;
     }
 
 
     public static void main (String[] args) {
-        stAnagram("ARMY","MARY");
+        isAnagram("ARMY","MARY");
         //Write a Java Program to check if the two String are Anagram. Two String are called Anagram when there is
         //same character but in different order.For example,"CAT" and "ACT", "ARMY" and "MARY".
     }

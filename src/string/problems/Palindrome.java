@@ -1,8 +1,7 @@
 package string.problems;
 
 public class Palindrome {
-    public static void main(String[] args) {
-
+    static String isP(String str){
         String oStr = "MADAM";
         String rStr = "";
 
@@ -14,6 +13,13 @@ public class Palindrome {
             System.out.println(oStr + " -- word is a palindrome");
         else
             System.out.println(oStr + " -- word is not a palindrome");
+    return rStr;
+    }
+
+    public static void main(String[] args) {
+        Palindrome.isP("MADAM");
+
+
         /*
           If a String is reversed and it remains unchanged, that is called Palindrome. For example, MOM,DAD,MADAM are
           Palindrome. So write java code to check if a given String is Palindrome or not.
