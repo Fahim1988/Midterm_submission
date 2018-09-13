@@ -80,8 +80,7 @@ public class FortuneEmployee {
 		employeeInfo.put(102, employeeRecord102);
 
 
-
-	//	ConnectDB.createTableFromStringToMySql("employee_record", "employee_id", "employee_info");
+		//connectDB.createTableFromStringToMySql("employee_record", "employee_id", "employee_info");
 
 		for (Integer obj : employeeInfo.keySet()) {
 			for (Object obj1 : employeeInfo.get(obj)) {
